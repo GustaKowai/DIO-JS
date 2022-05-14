@@ -13,7 +13,7 @@ function comparar (numero1,numero2){
         comp10 = 'menor';
     }
   }
-  return `os números ${numero1} e  ${numero2} ${igual} são iguais. A soma é ${comp10} que 10 e ${comp20} que 20`;
+  return `os números ${numero1} e  ${numero2} ${igual} são iguais. A soma é ${numero1+numero2},  ${comp10} que 10 e ${comp20} que 20`;
 }
 
 console.log(comparar(15,15));
