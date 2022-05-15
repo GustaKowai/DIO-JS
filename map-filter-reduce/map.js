@@ -18,9 +18,7 @@ console.log(mapThis(nums,maca));
 console.log(mapThis(nums,laranja));
 
 function mapNoThis(entrada){
-  return entrada.map(function(item){
-    return item*2;
-  }); 
+  return entrada.map((item) => item*2); 
 }
 
 const numeros = [1,2,3,4,5]
