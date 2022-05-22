@@ -1,3 +1,9 @@
+function load(){
+  alert("pagina carregada");
+}
+function funcaoChange(elemento){
+  console.log(elemento.value);
+}
 function trocar(elemento){
   elemento.innerHTML="Isso, assim mesmo.";
 }

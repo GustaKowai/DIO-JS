@@ -8,10 +8,15 @@
   <script type="text/javascript" src="./js/main.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="load()">
   <h1>Minha página</h1>
   <button type="button" onclick="clicou()" onmouseover="hover()">Clique Aqui</button>
   <p id="agradecimento" onclick="redirecionar()"></p>
   <p onmouseover="trocar(this)" onmouseleave="sair(this)" onclick="notThere(this)">Passe o mouse em mim</p>
+  <select onchange="funcaoChange(this)">
+    <option value="1">valor 1</option>
+    <option value="2">valor 2</option>
+    <option value="3">valor 3</option>
+  </select>
 </body>
 </html>
