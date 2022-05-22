@@ -1,4 +1,51 @@
+function trocar(elemento){
+  elemento.innerHTML="Isso, assim mesmo.";
+}
+function sair(elemento){
+  elemento.innerHTML="Não, não pare.";
+}
+function notThere(elemento){
+  elemento.innerHTML="Ai, assim não ~ ";
+}
 
+function hover(){
+  document.getElementById("agradecimento").innerHTML = "<b>Vai, clica...</b>";
+  }
+function clicou(){
+ // alert("Obrigado por clicar.");
+  document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar.</b>";
+ // console.log(document.getElementById("agradecimento"));
+}
+function redirecionar(){
+  window.open("https://twitter.com/home");  //<- Esse abre em uma nova janela
+  //window.location.href = "https://twitter.com/home";  // <- Esse abre na mesma janela
+}
+/*function validaIdade(idade){
+  if(idade>=18){
+    var validar = true;
+  }else{
+    var validar = false;
+  }
+  return validar;
+}
+
+var idade = prompt("Qual a sua idade?");
+console.log (validaIdade(idade));
+
+*/
+
+/*function soma(n1,n2){
+  return n1+n2;
+}
+
+
+function setReplace(frase,nome,novo_nome){
+  return frase.replace(nome,novo_nome)
+}
+alert(setReplace("Vai Japão","Japão", "Brasil"));
+
+
+*/
 //Primeira aula:
 /*var d = new Date;
 alert(d.getMonth());
