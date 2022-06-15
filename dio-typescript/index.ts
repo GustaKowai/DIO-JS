@@ -1,4 +1,4 @@
-console.log('TypeScript')
+/*console.log('TypeScript')
 
 function soma(a: number, b: number){
   return a + b;
@@ -45,3 +45,13 @@ const animaldomestico : TDomestico = {
   porte: 'médio',
   tipo: 'terrestre',
 }
+*/
+//aula input
+
+const input = document.getElementById('input') as HTMLInputElement;
+input.addEventListener('input',(event) => {
+  console.log(input.value);
+  const i = event.currentTarget as HTMLInputElement;
+  console.log(i.value); //faz basicamente o mesmo do que o de duas linhas acima.
+  //console.log(event.currentTarget.)
+});
