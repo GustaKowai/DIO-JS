@@ -1,51 +1,20 @@
 "use strict";
-const pessoa = {
-    nome: 'mariana',
-    idade: 28,
-    profissao: 'desenvolvedora'
-};
-pessoa.idade = 25;
-const Andre = {
-    nome: 'andre',
-    idade: 25,
-    profissao: 'pintor'
-};
-const Paula = {
-    nome: 'Paula',
-    idade: 22,
-    profissao: 'Desenvolvedora'
-};
-var Profissao;
-(function (Profissao) {
-    Profissao[Profissao["Professora"] = 0] = "Professora";
-    Profissao[Profissao["Atriz"] = 1] = "Atriz";
-    Profissao[Profissao["Desenvolvedora"] = 2] = "Desenvolvedora";
-    Profissao[Profissao["JogadoraDeFutebol"] = 3] = "JogadoraDeFutebol";
-})(Profissao || (Profissao = {}));
-const Vanessa = {
-    nome: 'Vanessa',
-    idade: 23,
-    profissao: Profissao.Desenvolvedora
-};
-const Maria = {
-    nome: 'Maria',
-    idade: 23,
-    profissao: Profissao.Desenvolvedora
-};
-const Jessica = {
-    nome: 'Jessica',
-    idade: 28,
-    profissao: Profissao.Desenvolvedora,
-    materias: ['Matemática discreta', 'programação']
-};
-const Monica = {
-    nome: 'Jessica',
-    idade: 28,
-    materias: ['Matemática discreta', 'programação']
-};
-function listar(lista) {
-    for (const item of lista) {
-        console.log('- ', item);
-    }
+let anyValue;
+anyValue = 3;
+anyValue = 'teste';
+anyValue = 5;
+let stringTeste = 'verificar';
+stringTeste = anyValue;
+let unknowValue;
+unknowValue = 3;
+unknowValue = 'opa';
+unknowValue = true;
+unknowValue = 'vai sim';
+let stringTeste2 = 'agora vai';
+if (typeof unknowValue === 'string') {
+    stringTeste2 = unknowValue;
 }
-listar(Monica.materias);
+function jogaErro(erro, codigo) {
+    throw { error: erro, code: codigo };
+}
+jogaErro('deu erro', 500);
